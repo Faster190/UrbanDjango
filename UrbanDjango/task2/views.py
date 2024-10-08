@@ -1,10 +1,11 @@
 from django.shortcuts import render
+from django.views.generic import TemplateView
 
 # Create your views here.
 
 
-def display_class(request):
-    return render(request, "class_template.html")
+class display_class(TemplateView):
+    template_name = "class_template.html "
 
 
 def display_func(request):
