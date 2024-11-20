@@ -4,7 +4,7 @@ from django.views.generic import TemplateView
 # Create your views here.
 
 
-class display_class(TemplateView):
+class TaskTemplateView(TemplateView):
     template_name = "second_task/class_template.html "
 
 
